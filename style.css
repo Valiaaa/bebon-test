@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	background-color: darkgreen;
+	cursor: url('hand.png') 10 10,auto;
 }
 
 @font-face {
@@ -11,11 +12,8 @@
 }
 
 :root{
-	--wght: 100;
 	--wdth: 100;
-	--XHGT: 100;
-
-	--color: antiquewhite;
+	--color: silver;
 }
 body{
 	font-family: 'Arial';
@@ -27,6 +25,66 @@ body{
 	color:  var(--color);
 }
 
+h1 {
+	font-family: Bebon;
+	font-variation-settings: 'wdth' var(--wdth);
+	font-size: 8vw;
+	font-weight: normal;
+	text-transform: uppercase;
+	--wdth: 100;
+	}
+
+#alphabet {
+	text-align: center;
+}
+.letter {
+	transition: font-variation-settings .3s ease-in, color .3s ease-in;
+	display: inline;
+	line-height: 100%;
+	margin-left: 0em;
+	margin-right: 0em;
+	text-align: center;
+}
+
+.letter:hover {
+	--wdth: 200;
+	color: rgb(255, 255, 255);
+	transition: font-variation-settings .3s ease-in,
+	background-color .3s ease-in, color .3s ease-in;
+	}
+
+h2 {
+	font-family: 'Bebon';
+	font-variation-settings: 'wdth' var(--wdth);
+	line-height: 100%;
+	font-size: 6vw;
+	font-weight: normal;
+	text-transform: uppercase;
+	--wdth: 100;
+}
+
+#drag {
+	position: absolute;
+	border-radius: 8px;
+	border: 2px solid silver;
+	box-shadow: 5px 5px silver;
+	text-align: center;
+	padding: 10px;
+  }
+
+.pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90vh;
+  }
+
+hr {
+	width:94vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
 .magmatic, .magmatic *{
 	font-variation-settings: 'wdth' var(--wdth);
 }
@@ -98,5 +156,5 @@ button{
 }
 button:hover{
 	color: olivedrab;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
