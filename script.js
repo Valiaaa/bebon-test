@@ -67,7 +67,17 @@ $(document).ready(function(){
 		});
 		
 	});
-});
+
+	$('.pic').click (function _getRandomString(len) {
+		len = len || 1;
+		var $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ.,:;-_';
+		var maxPos = $chars.length;
+		var pwd = '';
+		for (i=0; i<len; i++) {
+			pwd += $chars.charAt(Math.floor(Math.random()*maxPos));
+		}
+		return pwd;
+	});
 
 
 // Function to generate random number 
