@@ -68,17 +68,9 @@ $(document).ready(function(){
 		
 	});
 
-	$('.pic').click (function zimu(len){
-		len = len || 1;
-		var $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		var maxPos = $chars.length;
-		var pwd = '';
-		for (i = 0; i < len; i++) {
-			pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+	$('.pic').click (function(){
 		});
-	
-	//引用
-	$("#Editor").val(mingzi(5));  //生成5个字母
+
 
 
 // Function to generate random number 
