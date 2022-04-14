@@ -69,7 +69,15 @@ $(document).ready(function(){
 	});
 
 	$('.pic').click (function(){
-		});
+		$("#mahjong").append("<div id='drag'><h2>K</h2></div>");
+	});
+
+	/*$('.pic').click (function appendText(){
+		var txt=$("<h2></h2>").text(res);
+		$("#drag").append(txt);
+	});*/
+
+});
 
 
 
@@ -77,3 +85,13 @@ $(document).ready(function(){
 function randomNumber(min, max) { 
     return Math.floor(Math.random() * (max - min) + min);
 }
+
+/*var str = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+function generateMixed(n) {
+     var res = "";
+     for(var i = 0; i < n ; i ++) {
+         var id = Math.ceil(Math.random()*26);
+         res += str[id];
+     }
+     return res;
+}*/

@@ -93,6 +93,9 @@ section{
 	margin: 3rem 0;
 }
 
+#mahjong {
+	display:inline;
+}
 
 #intro{
 	font-family: 'Bebon';
